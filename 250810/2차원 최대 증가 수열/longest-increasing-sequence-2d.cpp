@@ -11,7 +11,7 @@ int jump(int r, int c){
 
     dp[r][c] = 1;
     
-    if(r + 1 < n && c + 1 < m) {
+    if(r + 1 < n || c + 1 < m) {
         for(int i = r+1; i < n; i ++) {
             for(int j = c+1; j < m; j++) {
                 if(grid[r][c] < grid[i][j]) {
@@ -32,20 +32,14 @@ int main() {
     }
 
     // Please write your code here.
+
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             jump(i,j);
         }
     }
 
-    int ans = 1;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            ans = max(ans, dp[i][j]);
-        }
-    }
-
-    cout << ans;
+    cout << dp[0][0];
 
     return 0;
 }
