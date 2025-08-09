@@ -3,7 +3,7 @@
 using namespace std;
 
 int n;
-int D[1001];
+long long D[1001];
 
 int main() {
     cin >> n;
