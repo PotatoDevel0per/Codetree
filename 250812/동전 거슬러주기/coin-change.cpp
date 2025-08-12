@@ -14,7 +14,7 @@ int main() {
     }
 
     // Please write your code here.
-    for(int i = 0; i < 101; i++) {
+    for(int i = 0; i < 10001; i++) {
         dp[i] = INT_MAX;
     }
     dp[0] = 0;
