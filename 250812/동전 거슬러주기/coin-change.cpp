@@ -4,7 +4,7 @@ using namespace std;
 
 int N, M;
 int coin[100];
-int dp[101];
+int dp[10001];
 
 int main() {
     cin >> N >> M;
