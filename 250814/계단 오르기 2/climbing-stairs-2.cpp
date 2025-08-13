@@ -30,9 +30,10 @@ int main() {
         
         // 1계단으로 2번째 연속 도달 (이전이 1계단 1번이어야 함)
         dp[i][2] = dp[i-1][1] + coin[i];
+        dp[i][3] = dp[i-1][2] + coin[i];
     }
     
-    cout << max({dp[n][0], dp[n][1], dp[n][2]});
+    cout << max({dp[n][0], dp[n][1], dp[n][2], dp[n][3]});
     
     return 0;
 }
