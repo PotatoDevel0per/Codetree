@@ -1,0 +1,1 @@
+print("{}\n{}\n{}".format(sum(data := list(map(int, input().split()))), sum(data)//3, sum(data) - sum(data)//3))
