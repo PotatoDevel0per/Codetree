@@ -1,0 +1,1 @@
+print("{:.3f}\n{:.3f}\n{:.3f}".format(float(input()),float(input()),float(input())))
