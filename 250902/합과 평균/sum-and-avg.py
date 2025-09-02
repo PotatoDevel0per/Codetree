@@ -1,2 +1,1 @@
-a, b = map(int, input().split())
-print("{} {}".format(a+b, (a+b)/2))
+print("{} {}".format(sum(data := list(map(int, input().split()))), sum(data)/2))
