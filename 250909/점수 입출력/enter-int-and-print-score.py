@@ -1,0 +1,1 @@
+print("Your score is {} point.".format(int(input())))
