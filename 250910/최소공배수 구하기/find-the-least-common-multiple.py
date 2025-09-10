@@ -7,10 +7,11 @@ for i in range(min(n, m), 0, -1) :
         gcd = i
         break
 
-lcm = max(n, m)
-while True :
-    if lcm % n == 0 and lcm % m == 0 :
-        print(lcm)
-        break
-    else :
-        lcm += gcd
+# lcm = max(n, m)
+# while True :
+#     if lcm % n == 0 and lcm % m == 0 :
+#         print(lcm)
+#         break
+#     else :
+#         lcm += gcd
+print(n * m // gcd)
