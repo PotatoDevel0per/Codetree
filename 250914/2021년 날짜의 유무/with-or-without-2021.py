@@ -2,6 +2,8 @@ M, D = map(int, input().split())
 
 # Please write your code here.
 def check_day(M, D) :
+    if M > 12 :
+        return False
     if M == 2 :
         return D < 29
     elif M in [1, 3, 5, 7, 8, 10, 12] :
