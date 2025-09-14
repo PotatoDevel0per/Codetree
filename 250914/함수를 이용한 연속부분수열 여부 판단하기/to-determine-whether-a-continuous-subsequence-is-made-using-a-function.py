@@ -14,6 +14,7 @@ def check_CPS(a, b) :
             for j in range(1, len(str_b)) :
                 if i + j >= len(str_a) : 
                     ck = False 
+                    break
                 if str_a[i + j] != str_b[j] : 
                     ck = False
     return ck
