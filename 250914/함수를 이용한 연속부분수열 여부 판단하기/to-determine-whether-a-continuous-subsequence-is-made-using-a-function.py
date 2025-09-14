@@ -4,18 +4,12 @@ b = list(map(int, input().split()))
 
 # Please write your code here.
 def check_CPS(a, b) :
-    str_a = ''.join(str(n) for n in a)
-    str_b = ''.join(str(n) for n in b)
-
     ck = True
-    
-    for i in range(len(str_a)) :
-        if str_a[i] == str_b[0] : 
-            for j in range(1, len(str_b)) :
-                if i + j >= len(str_a) : 
-                    ck = False 
-                    break
-                if str_a[i + j] != str_b[j] : 
+
+    for i in range(n1) : 
+        if i + n2 < n1 and a[i] == b[0] :
+            for j in range(1, n2) :
+                if a[i+j] != b[j] :
                     ck = False
     return ck
 
