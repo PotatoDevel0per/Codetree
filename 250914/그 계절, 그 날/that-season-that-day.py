@@ -1,7 +1,7 @@
 Y, M, D = map(int, input().split())
 
 def check_leap(Y) :
-    return not(Y % 4 != 0 and (4 % 100 == 0 or n % 400 != 0))
+    return not(Y % 4 != 0 or (Y % 100 == 0 and Y % 400 != 0))
 
 def check_day(Y, M, D) :
     if M == 2 :
