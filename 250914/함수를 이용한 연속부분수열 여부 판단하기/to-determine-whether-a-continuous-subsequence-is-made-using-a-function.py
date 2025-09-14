@@ -7,7 +7,7 @@ def check_CPS(a, b) :
     ck = True
 
     for i in range(n1) : 
-        if i + n2 < n1 and a[i] == b[0] :
+        if i + (n2-1) < n1 and a[i] == b[0] :
             for j in range(1, n2) :
                 if a[i+j] != b[j] :
                     ck = False
