@@ -7,10 +7,11 @@ def check_CPS(a, b) :
     ck = True
 
     for i in range(n1) : 
-        if i + (n2-1) < n1 and a[i] == b[0] :
+        if a[i] == b[0] and i + n2 - 1 < n1 :
             for j in range(1, n2) :
                 if a[i+j] != b[j] :
                     ck = False
+                    break
     return ck
 
 print(f"{'Yes' if check_CPS(a,b) else 'No'}")
